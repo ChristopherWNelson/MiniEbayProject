@@ -1,0 +1,14 @@
+$def with (item, form, current_time)
+$var current_time:$current_time
+<style>
+gd {
+font-family: "Comic Sans MS", cursive, sans-serif;
+}
+</style>
+<body background="http://www.theconsumersedge.com/wp-content/uploads/2013/11/promotion-discounts-image.jpg" height="163" width="250">
+</body>
+<gd>place a bid on Item $item.id</gd>
+<form name="bid" action='/bid'  method="post">
+$:form.render()
+<input type="submit"/>
+</form>

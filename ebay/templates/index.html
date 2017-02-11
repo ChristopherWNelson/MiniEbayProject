@@ -1,0 +1,79 @@
+$def with (form, items, current_time)
+$var current_time:$current_time
+<head>
+<style>
+  body {background-color:lightblue}
+  h1   {color:black;font-size: 50px;}
+  p    {color:black;font-size: 50px;}
+p.serif {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+gd
+{
+font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.gd
+{
+font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+</style>
+</head>
+
+<body background="http://www.theconsumersedge.com/wp-content/uploads/2013/11/promotion-discounts-image.jpg" height="163" width="250">
+<center><p style="color: #000000; background-color: #00BFFF" title="Work In Progress" class="serif">The Cheap Bay</p>
+</center>
+
+</body>
+
+<gd style="color: #000000; background-color: #00BFFF">
+<form action="" method="post">
+$:form.render()
+<input type="submit"/>
+</form>
+</gd>
+
+<table style="color: #000000; background-color: #00BFFF" CLASS ="gd" cellspacing="10">
+    <tr>
+        <th>Items</th>
+        <th></th>
+    </tr>
+  <tr>
+  <td>id</td>
+  <td>category</td>
+  <td>title</td>
+  <td>description</td>
+  <td>price</td>
+  <td>open</td>
+  <td>end_date</td>
+  <td>winner</td>
+  </tr>    
+$for item in items:
+  <tr>
+  <td>$item.id</td>
+  <td>$item.category</td>
+  <td>$item.title</td>
+  <td>$item.description</td>
+  <td>$item.price</td>
+  <td>$item.open</td>
+  <td>$item.end_date</td>
+  <td>$item.winner</td>
+  <td><a href="/view/$item.id">View</a></td>
+  </tr>    
+</table>  
+<div>
+<img src="http://blog.gowfb.com/wp-content/uploads/2012/08/100-off-at-crazeal.jpg" alt="Smiley face" height="163" width="250">
+<img src="http://www.frugalissafinds.com/wp-content/uploads/2013/05/What-to-buy-each-month.jpg" alt="Smiley face" height="163" width="250">
+<img src="https://moviewriternyu.files.wordpress.com/2015/01/must-go.jpg" height="163" width="250">
+</div>
+<div>
+<img src="http://blog.gumtree.sg/wp-content/uploads/2014/05/Great_Singapore_Sale.jpg" height="163" width="250">
+<img src="http://fc06.deviantart.net/fs71/f/2011/333/a/4/i_want_you_to_buy_crap_by_fr_cio-d4hokjj.jpg" alt="Smiley face" height="163" width="250">
+<img src="http://nickgrantham.com/wp-content/uploads/closing+down+sale.jpg" height="163" width="250">
+</div>
+<div>
+<img src="http://buyhomesindetroit.com/wp-content/uploads/2011/02/buyers-market1.jpg" height="163" width="250">
+<img src="http://www.jeffbullas.com/wp-content/uploads/2009/03/Buy-now-button.jpg" height="163" width="250">
+<img src="http://www.indyme.com/wp-content/uploads/2013/03/Buy-Button-dreamstime_l_10923072-2013-0307-cropped.jpg" height="163" width="250">
+</div>
+

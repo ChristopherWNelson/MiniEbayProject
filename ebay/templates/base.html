@@ -1,0 +1,34 @@
+$def with (page)
+
+<html>
+<head>
+    <title>Mini-ebay</title>
+    <style>
+        #menu {
+            width: 200px;
+            float: right;
+        }
+	#clock{
+	    position: absolute;
+	    width: 200px;
+	    text-align: right;
+	    bottom: 20px;
+	    right: 20px;
+	}
+	gd{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	}	
+    </style>
+</head>
+<body>
+<gd>
+<ul id="menu">	
+    <li><a href="/">Home</a></li>
+    <li><a href="/new">New Listing</a></li>
+</ul>
+<div id="clock"> $page.current_time </div>
+</gd>
+$:page
+
+</body>
+</html>

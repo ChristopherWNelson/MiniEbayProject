@@ -1,0 +1,31 @@
+$def with (id, bids, current_time)
+$var current_time:$current_time
+<style>
+gd {
+font-family: "Comic Sans MS", cursive, sans-serif;
+}
+</style>
+
+<body background="http://www.theconsumersedge.com/wp-content/uploads/2013/11/promotion-discounts-image.jpg" height="163" width="250">
+</body>
+<gd>
+<table style="color: #000000; background-color: #00BFFF">
+    <tr>
+        <th>Item $id bids</th>
+        <th></th>
+    </tr>
+  <tr><a href="/view/$id">Back</a></tr>
+  <tr>
+  <td>buyer</td>
+  <td>price</td>
+  <td>time</td>
+  </tr>    
+$for bid in bids:
+  <tr>
+  <td>$bid.buyer</td>
+  <td>$bid.price</td>
+  <td>$bid.time</td>
+  </tr>    
+</table> 
+</gd> 
+
